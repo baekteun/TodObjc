@@ -61,19 +61,43 @@
 		4687DF63289846FC00B1D980 /* TodObjc */ = {
 			isa = PBXGroup;
 			children = (
+				4687DF7F2898497E00B1D980 /* VC */,
+				4687DF7E2898492B00B1D980 /* Resources */,
+				4687DF7D2898490400B1D980 /* App */,
+				4687DF75289846FE00B1D980 /* Info.plist */,
+			);
+			path = TodObjc;
+			sourceTree = "<group>";
+		};
+		4687DF7D2898490400B1D980 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4687DF76289846FE00B1D980 /* main.m */,
 				4687DF64289846FC00B1D980 /* AppDelegate.h */,
 				4687DF65289846FC00B1D980 /* AppDelegate.m */,
 				4687DF67289846FC00B1D980 /* SceneDelegate.h */,
 				4687DF68289846FC00B1D980 /* SceneDelegate.m */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4687DF7E2898492B00B1D980 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4687DF72289846FE00B1D980 /* LaunchScreen.storyboard */,
+				4687DF70289846FE00B1D980 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4687DF7F2898497E00B1D980 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				4687DF6D289846FC00B1D980 /* Main.storyboard */,
 				4687DF6A289846FC00B1D980 /* ViewController.h */,
 				4687DF6B289846FC00B1D980 /* ViewController.m */,
-				4687DF6D289846FC00B1D980 /* Main.storyboard */,
-				4687DF70289846FE00B1D980 /* Assets.xcassets */,
-				4687DF72289846FE00B1D980 /* LaunchScreen.storyboard */,
-				4687DF75289846FE00B1D980 /* Info.plist */,
-				4687DF76289846FE00B1D980 /* main.m */,
 			);
-			path = TodObjc;
+			path = VC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
