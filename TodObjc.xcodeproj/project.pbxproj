@@ -15,6 +15,7 @@
 		4687DF77289846FE00B1D980 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4687DF76289846FE00B1D980 /* main.m */; };
 		4687DF8F2899013A00B1D980 /* TodoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4687DF8E2899013A00B1D980 /* TodoListViewController.m */; };
 		4687DF922899018400B1D980 /* TodoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4687DF912899018400B1D980 /* TodoCell.m */; };
+		4687DF9C2899115F00B1D980 /* Todo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4687DF9B2899115F00B1D980 /* Todo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,8 @@
 		4687DF8E2899013A00B1D980 /* TodoListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodoListViewController.m; sourceTree = "<group>"; };
 		4687DF912899018400B1D980 /* TodoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodoCell.m; sourceTree = "<group>"; };
 		4687DF932899051000B1D980 /* TodoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodoCell.h; sourceTree = "<group>"; };
+		4687DF9A2899115F00B1D980 /* Todo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Todo.h; sourceTree = "<group>"; };
+		4687DF9B2899115F00B1D980 /* Todo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Todo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +98,7 @@
 		4687DF7F2898497E00B1D980 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				4687DF9528990E9C00B1D980 /* Entity */,
 				4687DF822898FEC700B1D980 /* TodoLIst */,
 				4687DF6D289846FC00B1D980 /* Main.storyboard */,
 			);
@@ -117,6 +121,15 @@
 				4687DF932899051000B1D980 /* TodoCell.h */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		4687DF9528990E9C00B1D980 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				4687DF9A2899115F00B1D980 /* Todo.h */,
+				4687DF9B2899115F00B1D980 /* Todo.m */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4687DF8F2899013A00B1D980 /* TodoListViewController.m in Sources */,
+				4687DF9C2899115F00B1D980 /* Todo.m in Sources */,
 				4687DF66289846FC00B1D980 /* AppDelegate.m in Sources */,
 				4687DF77289846FE00B1D980 /* main.m in Sources */,
 				4687DF69289846FC00B1D980 /* SceneDelegate.m in Sources */,
