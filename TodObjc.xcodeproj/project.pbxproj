@@ -66,6 +66,7 @@
 		4687DF63289846FC00B1D980 /* TodObjc */ = {
 			isa = PBXGroup;
 			children = (
+				4687DF9528990E9C00B1D980 /* Entity */,
 				4687DF7F2898497E00B1D980 /* Scene */,
 				4687DF7E2898492B00B1D980 /* Resources */,
 				4687DF7D2898490400B1D980 /* App */,
@@ -98,7 +99,6 @@
 		4687DF7F2898497E00B1D980 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
-				4687DF9528990E9C00B1D980 /* Entity */,
 				4687DF822898FEC700B1D980 /* TodoLIst */,
 				4687DF6D289846FC00B1D980 /* Main.storyboard */,
 			);
