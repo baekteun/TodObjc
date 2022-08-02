@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Todo List View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="TodoListViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="aEa-nS-75O">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TodoCell" id="C4g-5C-Pnf" customClass="TodoCell">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="C4g-5C-Pnf" id="Y8a-Ap-iT3">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="E0D-Mi-dDH">
+                                                    <rect key="frame" x="20" y="5" width="34" height="34.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="34" id="3z0-Mo-SVI"/>
+                                                        <constraint firstAttribute="width" constant="34" id="EKf-b0-bcI"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7vH-HH-5HL">
+                                                    <rect key="frame" x="63" y="12" width="331" height="19.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="7vH-HH-5HL" firstAttribute="trailing" secondItem="Y8a-Ap-iT3" secondAttribute="trailingMargin" id="Ifk-19-GzH"/>
+                                                <constraint firstItem="E0D-Mi-dDH" firstAttribute="top" secondItem="Y8a-Ap-iT3" secondAttribute="top" constant="5" id="Oti-we-75U"/>
+                                                <constraint firstItem="7vH-HH-5HL" firstAttribute="top" secondItem="Y8a-Ap-iT3" secondAttribute="topMargin" constant="1" id="QQB-fZ-c5Z"/>
+                                                <constraint firstAttribute="bottom" secondItem="E0D-Mi-dDH" secondAttribute="bottom" constant="4" id="R1c-IM-uuz"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="7vH-HH-5HL" secondAttribute="bottom" constant="1" id="TJq-By-LEb"/>
+                                                <constraint firstItem="E0D-Mi-dDH" firstAttribute="leading" secondItem="Y8a-Ap-iT3" secondAttribute="leading" constant="20" symbolic="YES" id="X6K-9S-b7u"/>
+                                                <constraint firstItem="7vH-HH-5HL" firstAttribute="leading" secondItem="E0D-Mi-dDH" secondAttribute="trailing" constant="9" id="p8e-Ag-NYK"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="isCompletedImageView" destination="E0D-Mi-dDH" id="S6E-7b-lB4"/>
+                                            <outlet property="todoLabel" destination="7vH-HH-5HL" id="ph4-4o-NMd"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="aEa-nS-75O" secondAttribute="bottom" id="0t1-bc-kQC"/>
+                            <constraint firstItem="aEa-nS-75O" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="GaL-TH-vTw"/>
+                            <constraint firstItem="aEa-nS-75O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Om6-eS-wgI"/>
+                            <constraint firstItem="aEa-nS-75O" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="rjA-7K-8fX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="todoListTableView" destination="aEa-nS-75O" id="RoE-ZK-fph"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="60.869565217391312" y="105.80357142857143"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
