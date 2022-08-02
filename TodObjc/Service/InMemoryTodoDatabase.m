@@ -12,7 +12,7 @@
 - (instancetype)init {
     self = [super init];
     if (self != nil) {
-        _items = [NSMutableArray arrayWithArray:@[]];
+        _items = [NSMutableArray array];
     }
     return self;
 }

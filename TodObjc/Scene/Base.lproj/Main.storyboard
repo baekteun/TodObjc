@@ -68,8 +68,8 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="isCompletedImageView" destination="E0D-Mi-dDH" id="S6E-7b-lB4"/>
-                                            <outlet property="todoLabel" destination="7vH-HH-5HL" id="ph4-4o-NMd"/>
+                                            <outlet property="isCompletedImageView" destination="E0D-Mi-dDH" id="rWM-rV-7Yk"/>
+                                            <outlet property="todoLabel" destination="7vH-HH-5HL" id="83t-MV-eYr"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

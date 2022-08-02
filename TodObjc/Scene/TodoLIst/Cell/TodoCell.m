@@ -8,8 +8,6 @@
 #import "TodoCell.h"
 
 @interface TodoCell ()
-@property (weak, nonatomic) IBOutlet UIImageView *isCompletedImageView;
-@property (weak, nonatomic) IBOutlet UILabel *todoLabel;
 
 @end
 

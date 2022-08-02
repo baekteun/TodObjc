@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46755C592899506200B59FD8 /* InMemoryTodoDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 46755C582899506200B59FD8 /* InMemoryTodoDatabase.m */; };
 		4687DF66289846FC00B1D980 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4687DF65289846FC00B1D980 /* AppDelegate.m */; };
 		4687DF69289846FC00B1D980 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4687DF68289846FC00B1D980 /* SceneDelegate.m */; };
 		4687DF6F289846FC00B1D980 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4687DF6D289846FC00B1D980 /* Main.storyboard */; };
@@ -19,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		46755C562899505300B59FD8 /* TodoDatabase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodoDatabase.h; sourceTree = "<group>"; };
+		46755C572899506200B59FD8 /* InMemoryTodoDatabase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InMemoryTodoDatabase.h; sourceTree = "<group>"; };
+		46755C582899506200B59FD8 /* InMemoryTodoDatabase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InMemoryTodoDatabase.m; sourceTree = "<group>"; };
 		4687DF61289846FC00B1D980 /* TodObjc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodObjc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4687DF64289846FC00B1D980 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4687DF65289846FC00B1D980 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -66,6 +70,7 @@
 		4687DF63289846FC00B1D980 /* TodObjc */ = {
 			isa = PBXGroup;
 			children = (
+				4687DF9D28994BDC00B1D980 /* Service */,
 				4687DF9528990E9C00B1D980 /* Entity */,
 				4687DF7F2898497E00B1D980 /* Scene */,
 				4687DF7E2898492B00B1D980 /* Resources */,
@@ -117,8 +122,8 @@
 		4687DF84289900DB00B1D980 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				4687DF912899018400B1D980 /* TodoCell.m */,
 				4687DF932899051000B1D980 /* TodoCell.h */,
+				4687DF912899018400B1D980 /* TodoCell.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -130,6 +135,16 @@
 				4687DF9B2899115F00B1D980 /* Todo.m */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		4687DF9D28994BDC00B1D980 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				46755C562899505300B59FD8 /* TodoDatabase.h */,
+				46755C572899506200B59FD8 /* InMemoryTodoDatabase.h */,
+				46755C582899506200B59FD8 /* InMemoryTodoDatabase.m */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +224,7 @@
 				4687DF77289846FE00B1D980 /* main.m in Sources */,
 				4687DF69289846FC00B1D980 /* SceneDelegate.m in Sources */,
 				4687DF922899018400B1D980 /* TodoCell.m in Sources */,
+				46755C592899506200B59FD8 /* InMemoryTodoDatabase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

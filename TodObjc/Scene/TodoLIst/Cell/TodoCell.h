@@ -8,5 +8,7 @@
 #import <UIKit/UIKit.h>
 
 @interface TodoCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UIImageView *isCompletedImageView;
+@property (weak, nonatomic) IBOutlet UILabel *todoLabel;
 
 @end
